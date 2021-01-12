@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/score_bat'
+
+ScoreBat::CLI.new.call
