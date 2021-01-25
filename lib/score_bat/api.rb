@@ -31,7 +31,7 @@ class ScoreBatAPI2
   def get_videos
     uri = URI.parse(URL)
     response = Net::HTTP.get_response(uri)
-    json = JSON.parse(response.body)[0]
+    json = JSON.parse(response.body)
   end
 
 end
