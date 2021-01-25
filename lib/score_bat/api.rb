@@ -36,8 +36,3 @@ class ScoreBatAPI2
 
 end
 
-videos = ScoreBatAPI1.new.get_videos
-puts ap videos.uniq
-
-videos = ScoreBatAPI2.new.get_videos
-puts ap videos.uniq

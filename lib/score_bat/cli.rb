@@ -28,12 +28,12 @@ class ScoreBat::CLI
   end
 
       def titles
-        videos = ScoreBatAPI1.new.get_videos
+        videos = ScoreBatAPI.new.get_videos
         puts ap videos.uniq
       end
 
       def information
-        videos = ScoreBatAPI2.new.get_videos
+        videos = ScoreBatAPI.new.get_videos
         puts ap videos.uniq
       end
 
