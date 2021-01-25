@@ -10,6 +10,7 @@ class ScoreBat::CLI
        system "clear"
         puts "WELCOME TO SCORE BAT!"    
         prompt = TTY::Prompt.new
+        while true do
         option = prompt.select("What would you like to do?") do |options|
           options.choice "See All Video Titles", 1
           options.choice "See All Information on Videos", 2
@@ -21,8 +22,10 @@ class ScoreBat::CLI
         information
       else option === 3
         exiting
+        break
       end
     end
+  end
 
       def titles
         videos = ScoreBatAPI1.new.get_videos
