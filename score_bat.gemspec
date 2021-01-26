@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.description = "Provides soccer videos and highlights."
   spec.authors     = ["Christopher Mrakovcic"]
   spec.email       = 'cmrakovcic@aol.com'
-  spec.files       = ["lib/score_bat.rb", "lib/score_bat/cli.rb", "lib/score_bat/api.rb", "lib/score_bat/video.rb", "config/environment.rb"]
+  spec.files       = ["lib/score_bat.rb", "lib/score_bat/cli.rb", "lib/score_bat/api.rb", "config/environment.rb"]
   spec.homepage    = 'https://github.com/cmrakovcic/score-bat'
   spec.license     = 'MIT'
   spec.executables << 'score_bat'

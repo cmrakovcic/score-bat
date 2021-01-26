@@ -21,26 +21,33 @@ class ScoreBat::CLI
       elsif option === 2
         information
       else option === 3
-        exiting
+        exited
         break
       end
     end
   end
 
-      def titles
+    def titles
         videos = ScoreBatAPI.new.get_videos
-        puts ap videos.uniq
+        videos.each do |video|
+      video_info = video.fetch_values("title") 
+      puts ap "#{video_info[0]}"
+        end
       end
 
-      def information
-        videos = ScoreBatAPI.new.get_videos
-        puts ap videos.uniq
-      end
+    def information
+      sleep (1)
+      videos = ScoreBatAPI.new.get_videos
+      videos.each do |video|
+    video_info = video.fetch_values("title", "date", "competition") 
+      puts ap "Title: #{video_info[0]} --  Competition: #{video_info[2]} -- Date: #{video_info[1]}"
+        end
+    end
+     
 
-      def exiting
+    def exited
         puts "Thank you! I Hope You Enjoyed The Videos!"
         sleep (3)
         system "clear"
       end
-
-end
+    end

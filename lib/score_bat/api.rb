@@ -4,7 +4,7 @@ require 'json'
 require 'awesome_print'
 require 'pry'
 
-class ScoreBatAPI1
+class ScoreBatAPI
 
     URL = "https://www.scorebat.com/video-api/v1/"
 
@@ -12,8 +12,8 @@ class ScoreBatAPI1
     uri = URI.parse(URL)
     response = Net::HTTP.get_response(uri)
     json = JSON.parse(response.body)
-    video_titles(json)
   end
+
 
   def video_titles(json)
     videos = []
@@ -21,18 +21,4 @@ class ScoreBatAPI1
         videos << video["title"]
     end
   end
-  
 end
-
-class ScoreBatAPI2
-  
-  URL = "https://www.scorebat.com/video-api/v1/"
-  
-  def get_videos
-    uri = URI.parse(URL)
-    response = Net::HTTP.get_response(uri)
-    json = JSON.parse(response.body)
-  end
-
-end
-
