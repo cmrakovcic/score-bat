@@ -9,7 +9,7 @@ class API
       video = Video.new
       video.title = video_hash["title"]
       video.date = video_hash["date"]
-      video.competition = video_hash["competition"]
+      video.competition = video_hash["competition"]["name"]
       video.url = video_hash["url"]
     end
   end
