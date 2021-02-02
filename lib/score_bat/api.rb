@@ -11,7 +11,6 @@ class API
       video.date = video_hash["date"]
       video.competition = video_hash["competition"]
       video.url = video_hash["url"]
-
     end
   end
 end
