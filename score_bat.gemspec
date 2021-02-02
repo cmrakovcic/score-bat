@@ -1,8 +1,6 @@
-require_relative '../lib/score_bat/version.rb'
-
 Gem::Specification.new do |spec|
   spec.name        = 'score-bat'
-  spec.version     = ScoreBat::VERSION
+  spec.version     = "0.1.2"
   spec.date        = '01-07-2021'
   spec.summary     = "Score Bat is site to view videos and highlights from a number of football leagues and tournaments including the Premier League, Champions League, La Liga, Serie A, Europa League and many more."
   spec.description = "Provides soccer videos and highlights."
@@ -11,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.files       = ["lib/score_bat", "lib/score_bat/api", "lib/score_bat/cli", "lib/score_bat/video", "config/environment"]
   spec.homepage    = 'https://github.com/cmrakovcic/score-bat'
   spec.license     = 'MIT'
-  spec.executables << 'score_bat'
+  spec.executables << 'ruby bin/run'
 
   spec.add_development_dependency "bundler", "~> 2.2"
   spec.add_development_dependency "json", "~> 2.5"
