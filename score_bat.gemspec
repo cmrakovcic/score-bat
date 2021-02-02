@@ -15,5 +15,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "json", "~> 2.5"
   spec.add_development_dependency "pry", "~> 0.13.1"
   spec.add_development_dependency "tty-prompt", "~> 0.23.0"
-  spec.add_development_dependency "awesome_print", "~> 1.8"
+  spec.add_development_dependency "lolize", "~> 0.0.3"
 end
