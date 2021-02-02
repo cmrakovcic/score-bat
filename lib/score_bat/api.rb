@@ -1,10 +1,10 @@
-require 'net/http'
-require 'open-uri'
-require 'json'
-require 'awesome_print'
-require 'pry'
+# require 'net/http'
+# require 'open-uri'
+# require 'json'
+# require 'awesome_print'
+# require 'pry'
 
-class ScoreBatAPI
+class API
 
   def self.fetch_videos
     url = "https://www.scorebat.com/video-api/v1/"

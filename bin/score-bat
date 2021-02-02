@@ -2,4 +2,4 @@
 
 require_relative '../lib/score_bat'
 
-ScoreBat::CLI.new.call
+CLI.new.call

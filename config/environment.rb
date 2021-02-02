@@ -1,6 +1,8 @@
-require 'pry'
-require 'json'
+require 'net/http'
 require 'open-uri'
+require 'json'
+require 'awesome_print'
+require 'pry'
 
 require_relative '../lib/score_bat/api'
 require_relative '../lib/score_bat/cli'

@@ -1,6 +1,6 @@
 # ScoreBat
 
-    These Ruby Gems provide a CLI to view videos and highlights from a number of football leagues and tournaments including the Premier League, Champions League, La Liga, Serie A, Europa League and many more.
+    The Score Bat CLI provides videos and highlights from a number of football leagues and tournaments including the Premier League, Champions League, La Liga, Serie A, Europa League and many more.
 ## Installation
 
     $ bundle install
@@ -13,7 +13,7 @@
 
 # Contributor's
     
-    This project was created at https://github.com/cmrakovcic/score-bat.  The ScoreBat CLI is intended to be a fun way to view soccer videos/highlights.  Pull requests and bug reports on this project are encouraged.
+    This project was created at https://github.com/cmrakovcic/score-bat.  The ScoreBat CLI is intended to be a fun way to view soccer videos and highlights.  Pull requests and bug reports on this project are encouraged.
 
 ## License
 
