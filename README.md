@@ -9,7 +9,7 @@
 
     Type the code below and follow the on screen prompts.
 
-    $ ./bin/score-bat
+    $ ./bin/run
 
 # Contributor's
     
