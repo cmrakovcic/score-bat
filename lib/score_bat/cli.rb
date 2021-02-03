@@ -8,7 +8,7 @@ class CLI
 
   def menu
     puts "Would you like to see the list of videos?"
-    puts "Type 'yes' to continue, or any other key to exit"
+    puts "Type 'yes' and press 'enter' to continue, or any other key to exit"
 
     user_input = gets.strip.downcase
 
@@ -32,7 +32,7 @@ class CLI
   end
 
   def ask_user_for_video_choice
-    puts "Enter the number of the video you would like to know more about"
+    puts "Enter the number of the video you would like to know more about and press 'enter'"
     index = gets.strip.to_i - 1
     until index.between?(0, Video.all.length - 1)
       puts "Sorry, invalid choice. Choose a valid number"
