@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/score_bat'
+require_relative '../config/environment'
 
 CLI.new.call
